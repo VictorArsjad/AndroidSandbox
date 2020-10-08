@@ -24,6 +24,9 @@ class NotificationsFragment : Fragment() {
         notificationsViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
+        val recyclerList: RecyclerView = root.findViewById(R.id.recycler_list)
+
+
         return root
     }
 }
